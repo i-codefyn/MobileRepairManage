@@ -1,0 +1,59 @@
+<!--header -->
+<header  class="">
+    <div class=" border-bottom d-none d-md-block header">
+      <div class="container">
+      <div class="top-header">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          {% for app in app_data %} 
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 start">
+           
+            <li><i class="fa fa-envelope i"></i> {{ app.app_email }}</li>
+            <li><i class="fa fa-phone i"></i> {{ app.app_mobile }}</li>
+          </ul> 
+         {% endfor %}
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0  ">
+            <li><i class="fab fa-facebook-square  me-1 i"></i> </li>
+            <li><i class="fab fa-instagram  ms-1 me-1 i"></i></li>
+            <li><i class="fab fa-youtube  ms-1 me-1 i"></i></li>
+         
+          </ul>
+
+  
+         
+           <a class="btn btn-outline-primary "  data-bs-toggle="tooltip" href="{% url 'login'%}"
+           data-bs-placement="bottom" title="Sign up for Free">Login/Sign-UP</a>
+          
+          
+           <div class="flex-shrink-0 end ">
+            <li class="nav-item dropdown-acc">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" 
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               <i class="fa fa-language me-1 "></i> English
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Hindi</a></li>
+                <li><a class="dropdown-item" href="#">Bengali</a></li>
+             
+    
+              </ul>
+            </li>
+          </div>
+  
+ 
+          <div class="flex-shrink-0 end ">
+            <li class="nav-item dropdown-acc">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" 
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               <i class="fa fa-user-circle me-1 i"></i> Account
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </div>
+        </div>
+        </div>
+          </div>
+          </div>

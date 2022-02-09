@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixenix | Mobile Services</title>
+
+    <link rel="stylesheet" href="fixenix-5.0/vendor/bootstrap-5.0.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="fixenix-5.0/vendor/bootstrap-5.0.2/css/datatable-1.11.3/datatable.min.css" />
+    <link rel="stylesheet" href="fixenix-5.0/vendor/fontawesome-6.0/css/all.min.css" />
+    <link rel="stylesheet" href="fixenix-5.0/css/main_style.css"/>
+    <link rel="stylesheet" href="fixenix-5.0/css/carousel.css"/>
+    <link rel="stylesheet" href="fixenix-5.0/css/features.css"/>
+    <script type="text/javascript" src="fixenix-5.0/vendor/jquery-3.5/jquery.min.js"></script>
+</head>
+
+<!--header -->
+  <header  class="">
+    <div class=" border-bottom d-none d-md-block header">
+      <div class="container">
+      <div class="top-header">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+ 
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 start">
+            <li><i class="fa fa-envelope i"></i> info@fixenix.com</li>
+            <li><i class="fa fa-phone i"></i> +917992351609</li>
+          </ul>
+
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0  ">
+            <li><i class="fab fa-facebook-square  me-1 i"></i> </li>
+            <li><i class="fab fa-instagram  ms-1 me-1 i"></i></li>
+            <li><i class="fab fa-youtube  ms-1 me-1 i"></i></li>
+         
+          </ul>
+
+  
+         
+           <button class="btn btn-outline-primary "  data-bs-toggle="tooltip" 
+           data-bs-placement="bottom" title="Sign up for Free">Login/Sign-UP</button>
+          
+          
+           <div class="flex-shrink-0 end ">
+            <li class="nav-item dropdown-acc">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" 
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               <i class="fa fa-language me-1 "></i> English
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Hindi</a></li>
+                <li><a class="dropdown-item" href="#">Bengali</a></li>
+             
+    
+              </ul>
+            </li>
+          </div>
+  
+ 
+          <div class="flex-shrink-0 end ">
+            <li class="nav-item dropdown-acc">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" 
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               <i class="fa fa-user-circle me-1 i"></i> Account
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </div>
+        </div>
+        </div>
+          </div>
+          </div>
+        
+     
+<!-- nav start -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light "id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="fixenix-5.0/images/logo.png"></a>
+          <ul class="navbar-nav ml-auto d-block d-md-none">
+  
+            <div type="button" style="margin-top:" id="sidebarCollapse" class="mobile-menu" >
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div>
+                  
+          
+          </ul>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedConten">
+          <ul class="navbar-nav me-auto mb-2 ms-5 mb-lg-0 justify-content-end">
+         
+       
+            <ul class="nav">
+              <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            </ul>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+             
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="col-md-3 text-end">
+            <button type="button" class="btn btn-outline-danger button-r me-2"   data-bs-toggle="tooltip" 
+            data-bs-placement="top" title="Get Free Quote">Free Quote</button>
+
+          </div>
+        </div>
+      </div>
+
+
+<!-- sidebar start -->
+
+    <!-- Sidebar -->
+<nav id="sidebar">
+  <div class="sidebar-header">
+
+
+
+
+
+
+
+        <div class="text-end">
+        
+       
+        <div class=" gap-2 d-md-flex justify-content-md-end">
+          <button class="btn btn-outline-danger button-r  me-md-2" type="button"  data-bs-toggle="tooltip" 
+          data-bs-placement="right" title="Free Quote">Free Quote</button>
+          <button type="button" id="sidebarCollapseX" class="btn r c" data-bs-toggle="tooltip" 
+          data-bs-placement="right" title="Close">
+            <i class="fa fa-close"></i>
+             </button>
+
+        </div>
+      </div>
+    </div>
+  <div class="flex-shrink-0  bg-white">
+ 
+  
+        <li class="nav-item dropdown-acc border-bottom">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" 
+          role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           <i class="fa fa-language me-1 "></i> English
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Hindi</a></li>
+            <li><a class="dropdown-item" href="#">Bengali</a></li>
+         
+          </ul>
+
+          
+        </li>
+
+   
+
+</div>
+</div>
+    </a>
+    <ul class="list-unstyled ps-0">
+      <li class="mb-1">
+        <button class="btn sidebar-btn align-items-center rounded collapsed" 
+        data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+          Home
+        </button>
+        <div class="collapse show" id="home-collapse">
+          <ul class="sidebar-btn-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-dark rounded">Overview</a></li>
+            <li><a href="#" class="link-dark rounded">Updates</a></li>
+            <li><a href="#" class="link-dark rounded">Reports</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button class="btn sidebar-btn align-items-center rounded collapsed" 
+        data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+          Dashboard
+        </button>
+        <div class="collapse" id="dashboard-collapse">
+          <ul class="sidebar-btn-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-dark rounded">Overview</a></li>
+            <li><a href="#" class="link-dark rounded">Weekly</a></li>
+            <li><a href="#" class="link-dark rounded">Monthly</a></li>
+            <li><a href="#" class="link-dark rounded">Annually</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button class="btn sidebar-btn align-items-center rounded collapsed"
+         data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+          Orders
+        </button>
+        <div class="collapse" id="orders-collapse">
+          <ul class="sidebar-btn-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-dark rounded">New</a></li>
+            <li><a href="#" class="link-dark rounded">Processed</a></li>
+            <li><a href="#" class="link-dark rounded">Shipped</a></li>
+            <li><a href="#" class="link-dark rounded">Returned</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="border-top my-3"></li>
+      <li class="mb-1">
+        <button class="btn sidebar-btn align-items-center rounded collapsed" 
+        data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+          Account
+        </button>
+        <div class="collapse" id="account-collapse">
+          <ul class="sidebar-btn-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-dark rounded">New...</a></li>
+            <li><a href="#" class="link-dark rounded">Profile</a></li>
+            <li><a href="#" class="link-dark rounded">Settings</a></li>
+            <li><a href="#" class="link-dark rounded">Sign out</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+    
+ <li class="border-top my-3"></li>
+  
+  <ul class="social-icons text-center">
+    
+    <li><a href="https://www.facebook.com/Fixenix.mobile/" target="_blank" title="">
+      <i class="fab fa-facebook-square c"></i></a></li>
+    <li><a href="#" target="_blank" title="">
+      <i class="fa fa-twitter c"></i></a></li>
+    <li><a href="https://www.youtube.com/channel/UCuAfKZwQtA6b8YJV1ofVoCQ" target="_blank" title="">
+      <i class="fab fa-youtube c"></i></a></li>
+    <li><a href="https://www.instagram.com/fixenix_official/" target="_blank" title="">
+      <i class="fab fa-instagram c"></i></a></li>
+  </ul>
+        <div class="col-lg-5">
+                        <ul class="text-center">
+                        <li><i class="fa fa-phone r mr-3"></i>+917992200751</li>
+                        <li><i class="fa fa-envelope r mr-3"></i> info@fixenix.com</li>
+                        </ul>
+                    </div>
+</nav>
+
+
+  </header>
+
+
+
+<!-- /header-->
+
+
+<!-- slider-->
+
+
+
+
+
+  <div id="myCarousel" class="carousel slide bgbanner" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+
+      <ol class="carousel-indicators">
+        <li class="center-block active" type="button" data-bs-target="#myCarousel" data-bs-slide-to="0"
+         class="active" aria-current="true" 
+        aria-label="Slide 1"></li>
+      <li class="center-block" type="button" 
+      data-bs-target="#myCarousel" 
+      data-bs-slide-to="1" aria-label="Slide 2">
+    </li>
+      <li class="center-block"  type="button" data-bs-target="#myCarousel" 
+      data-bs-slide-to="2" aria-label="Slide 3">
+   
+      </li>
+    </ol>
+
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="container">
+          <div class="carousel-caption text-dark text-start">
+            <h1>Example headline.</h1>
+            <p>Some representative placeholder content for the first slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-outline-danger button-r" href="#">Sign up today</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <div class="carousel-caption text-dark text-start">
+            <h1>Example headline.</h1>
+            <p>Some representative placeholder content for the first slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-outline-primary" href="#">Sign up today</a></p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="carousel-item">
+        <div class="container">
+          <div class="carousel-caption text-dark text-start">
+            <h1>Example headline.</h1>
+            <p>Some representative placeholder content for the first slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-outline-success button-g" href="#">Sign up today</a></p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  
+   
+  </div>
+
+
+
+
+
+
+
+<!-- features-->
+
+  <div class="container px-4 " id="icon-grid">
+    <h2 class="pb-2 border-bottom text-center">Features</h2>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+      <div class="col d-flex align-items-start">
+       <i class="fa fa-cogs f-icon"></i>
+        <div>
+          <h4 class="fw-bold mb-0">Featured title</h4>
+          <p>Paragraph of text beneath the heading to explain the heading.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <i class="fa fa-cogs f-icon"></i>
+        <div>
+          <h4 class="fw-bold mb-0">Featured title</h4>
+          <p>Paragraph of text beneath the heading to explain the heading.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <i class="fa fa-cogs f-icon"></i>
+        <div>
+          <h4 class="fw-bold mb-0">Featured title</h4>
+          <p>Paragraph of text beneath the heading to explain the heading.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <i class="fa fa-cogs f-icon"></i>
+        <div>
+          <h4 class="fw-bold mb-0">Featured title</h4>
+          <p>Paragraph of text beneath the heading to explain the heading.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <i class="fa fa-cogs f-icon"></i>
+        <div>
+          <h4 class="fw-bold mb-0">Featured title</h4>
+          <p>Paragraph of text beneath the heading to explain the heading.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <i class="fa fa-cogs f-icon"></i>
+        <div>
+          <h4 class="fw-bold mb-0">Featured title</h4>
+          <p>Paragraph of text beneath the heading to explain the heading.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <i class="fa fa-cogs f-icon"></i>
+        <div>
+          <h4 class="fw-bold mb-0">Featured title</h4>
+          <p>Paragraph of text beneath the heading to explain the heading.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <i class="fa fa-cogs f-icon"></i>
+        <div>
+          <h4 class="fw-bold mb-0">Featured title</h4>
+          <p>Paragraph of text beneath the heading to explain the heading.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- footer-->
+<footer>
+
+
+
+<div class="footer mt-5 ">
+
+  <footer class="text-white text-center text-lg-start bg-dark">
+
+    <div class=" container-fluid p-4">
+   
+      <div class="row mt-4">
+      <!--1-->
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">About Us</h5>
+
+          <span>
+           fixenix
+          </span>
+
+      
+        </div>
+     <!--2-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Address</h5>
+
+
+          <ul class="fa-ul footer address">
+            
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Praksh nagar</span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">contact@fixenix.com</span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 917992351609</span>
+            </li>
+          </ul>
+          <div class="mt-4">
+            <ul class="social-icons-footer">
+    
+              <li><a href="https://www.facebook.com/Fixenix.mobile/" target="_blank" title="">
+                <i class="fab fa-facebook-f r"></i></a></li>
+          
+              <li><a href="https://www.youtube.com/channel/UCuAfKZwQtA6b8YJV1ofVoCQ" target="_blank" title="">
+                <i class="fab fa-youtube r"></i></a></li>
+              <li><a href="https://www.instagram.com/fixenix_official/" target="_blank" title="">
+                <i class="fab fa-instagram r"></i></a></li>
+            </ul>
+          </div>
+        </div>
+     
+
+        <!--3-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Opening Hours</h5>
+
+
+          <ul class="fa-ul footer address">
+            
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-calendar"></i></span><span class="ms-2">Mon-Sat
+                
+                </span> <span class="ms-2"></span><i class="fas fa-clock"></i> 
+                <span class="ms-2"></span>10:00am-9:00pm</span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-calendar"></i></span>
+              <span class="ms-2">Sunday
+                
+              </span> <span class="ms-2"></span><i class="fas fa-clock"></i> 
+              <span class="ms-2"></span>11:00am-6:00pm</span>
+            </li>
+            <li class="mb-3">
+            
+            </li>
+          </ul>
+          <div class="mt-4">
+            <div class="row  d-flex justify-content-center align-items-center">
+                  <div class="search position-relative"> 
+                    <input class="form-control" placeholder="Your email address"> 
+                    <button class="btn btn-outline-success  position-absolute">Subscribe</button> </div>
+            
+          </div>
+        </div>
+    </div>
+    </div>
+   
+
+    <!-- Copyright -->
+  <hr>
+  <div class="text-center ">
+  <a href="">Disclaimer</a> |
+   <a href="">Privacy Policy</a> </div>
+    <div class="text-center text-white p-3">
+      © 2021 Copyright:
+      <a class="text-white" href="https://fixenix.com/">Fixenix</a>
+    </div>
+  
+  </footer>
+
+</div>
+
+<body>
+    <script type="text/javascript" src="fixenix-5.0/vendor/bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="fixenix-5.0/vendor/DataTables-1.11.3/datatables.min.css"></script>
+    <script type="text/javascript" src="fixenix-5.0/js/main_style.js"></script>
+</body>
+</html>
+
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+</script>

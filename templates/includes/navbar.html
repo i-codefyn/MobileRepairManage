@@ -1,0 +1,50 @@
+<!-- nav start -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light "id="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        
+          {% for image in app_data %}
+        <img src="{{ image.app_logo.url }}" alt="Fixenix"></a>{% endfor %}
+        <ul class="navbar-nav ml-auto d-block d-md-none">
+
+          <div type="button" style="margin-top:" id="sidebarCollapse" class="mobile-menu" >
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+                
+        
+        </ul>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedConten">
+        <ul class="navbar-nav me-auto mb-2 ms-5 mb-lg-0 justify-content-end">
+       
+     
+          <ul class="nav">
+            <li class="nav-item"><a href="{% url 'home' %}" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="{% url 'about' %}" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="{% url 'services'%}" class="nav-link">Service</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+          </ul>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+           
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="col-md-3 text-end">
+          <button type="button" class="btn btn-outline-danger button-r me-2"   data-bs-toggle="tooltip" 
+          data-bs-placement="top" title="Get Free Quote">Free Quote</button>
+
+        </div>
+      </div>
+    </div>

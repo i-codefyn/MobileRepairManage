@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{% block title %}{% if page_title %}{{ page_title }} - {% endif %}
+        {{ site_name }}{% endblock %}</title>
+    <meta name="keywords" content="{{ meta_keywords }}" />
+    <meta name="description" content="{{ meta_description }}" />
+    {% load static %}
+    <script type="text/javascript" src="{% static 'fixenix-5.0/vendor/jquery-3.5/jquery.min.js' %}"></script>
+    <link rel="stylesheet" type="text/css"
+        href="{% static 'fixenix-5.0/vendor/bootstrap-5.0.2/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" type="text/css"
+        href="{% static 'fixenix-5.0/vendor/bootstrap-5.0.2/css/datatable-1.11.3/datatable.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'fixenix-5.0/vendor/fontawesome-6.0/css/all.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'fixenix-5.0/css/dash.css' %}" />
+    <script type="text/javascript"
+        src="{% static 'fixenix-5.0/vendor/bootstrap-5.0.2/js/bootstrap.bundle.min.js' %} "></script>
+    <script type="text/javascript"
+        src="{% static 'fixenix-5.0/vendor/DataTables-1.11.3/datatables.min.css ' %}"></script>
+    <script type="text/javascript" src="{% static 'fixenix-5.0/js/dash.js' %} "></script>
+    {% block content %}
+
+    {% endblock %}
+
+
+
+
+
+
+
+
+
+    </body>
+
+</html>
+
+
+
+
+<script>
+    $(document).ready(function () {
+
+        $('ul.navbar-nav > li')
+            .click(function (e) {
+                $('ul.navbar-nav > li')
+                    .removeClass('active1');
+                $(this).addClass('active1');
+            });
+    });
+
+
+    $(document).ready(function () {
+        $("#sidebarsrink").click(function () {
+            $(".wrapper").toggleClass("toggled");
+        });
+
+
+        $("#srink").click(function () {
+            $(".wrapper.").toggleClass("toggled1");
+        });
+
+
+    });
+
+
+</script>
